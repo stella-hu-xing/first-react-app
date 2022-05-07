@@ -32,3 +32,9 @@ function WelcomeDialog() {
 ```
 
 Ref: https://reactjs.org/docs/composition-vs-inheritance.html
+
+## Hooks
+
+Hooks let you use state and other React features without writing a class, e.g. useState, useEffect...
+
+https://reactjs.org/docs/hooks-overview.html

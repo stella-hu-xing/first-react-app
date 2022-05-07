@@ -1,5 +1,6 @@
-import {ExpenseItem} from './components/ExpenseItem';
-import {Card} from './components/Card';
+import {ExpenseItem} from './components/Expense/ExpenseItem';
+import {Card} from './components/UI/Card';
+import {NewExpense} from './components/Expense/NewExpense';
 import './App.css';
 
 function App() {
@@ -10,7 +11,7 @@ function App() {
   ];
   return (
     <div>
-      <h2>Expense Items</h2>
+      <NewExpense />
       <Card className="expenses">
         {expenses.map((e) => {
           return <ExpenseItem expense={e} key={e.id}></ExpenseItem>;
