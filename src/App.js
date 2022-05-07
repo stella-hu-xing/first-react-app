@@ -1,4 +1,6 @@
 import {ExpenseItem} from './components/ExpenseItem';
+import {Card} from './components/Card';
+import './App.css';
 
 function App() {
   const expenses = [
@@ -9,9 +11,11 @@ function App() {
   return (
     <div>
       <h2>Expense Items</h2>
-      {expenses.map((e) => {
-        return <ExpenseItem expense={e} key={e.id}></ExpenseItem>;
-      })}
+      <Card className="expenses">
+        {expenses.map((e) => {
+          return <ExpenseItem expense={e} key={e.id}></ExpenseItem>;
+        })}
+      </Card>
     </div>
   );
 }
