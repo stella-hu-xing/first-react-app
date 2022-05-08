@@ -59,3 +59,11 @@ use `prev` prop to get latest state
     });
   };
 ```
+
+## Communicate from Child to Parent (Bottom up)
+
+How to pass data from child component to its parent in ReactJS ?
+
+- In the parent component, create a callback function. ...
+- Pass the callback function to the child as a props from the parent component.
+- The child component calls the parent callback function using props and passes the data to the parent component.
