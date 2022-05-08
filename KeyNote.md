@@ -38,3 +38,24 @@ Ref: https://reactjs.org/docs/composition-vs-inheritance.html
 Hooks let you use state and other React features without writing a class, e.g. useState, useEffect...
 
 https://reactjs.org/docs/hooks-overview.html
+
+### Use previous state
+
+```
+  const [userInput, setUserInput] = userState({
+    enteredTitle: '',
+    enteredAmount: '',
+    enteredDate: '',
+  });
+```
+
+use `prev` prop to get latest state
+
+```
+  const amountChangeHandler = (event) => {
+    setUserInput((prevState) => {
+      // use latest state
+      return {...prevState, enteredAmount: event.target.value};
+    });
+  };
+```
